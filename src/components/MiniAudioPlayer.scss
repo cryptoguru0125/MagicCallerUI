@@ -1,0 +1,9 @@
+.mini-audio {
+  font-size: 1.5rem;
+  opacity: 0.4;
+  &.active {
+    color: #4382ff;
+    opacity: 1;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,20 @@
+.schedule-field-container {
+  .schedule-row {
+    display: flex;
+    align-items: center;
+    > * {
+      margin-left: 10px;
+    }
+    > :first-child {
+      margin-left: 0;
+    }
+    .day-selector {
+      flex: 1;
+    }
+    .time-selector {
+      width: 80px;
+    }
+    .mdb-select.md-form {
+    }
+  }
+}

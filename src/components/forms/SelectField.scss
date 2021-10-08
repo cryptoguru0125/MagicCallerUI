@@ -1,0 +1,14 @@
+.select-container {
+  padding: 0.1px 0;
+  position: relative;
+  .select-wrapper + label {
+    font-weight: 300;
+    transform-origin: 0% 100%;
+  }
+  .mdb-main-label.active {
+    transform: translateY(-140%) scale(0.8);
+  }
+}
+.select-dropdown {
+  max-height: 400px;
+}

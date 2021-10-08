@@ -1,0 +1,42 @@
+.node {
+  background-color: #ffa269;
+  border-radius: 1px;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.4);
+  width: 300px;
+  position: relative;
+  font-size: 14px;
+}
+.toolbar {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  span {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  :global(.mini-audio) {
+    font-size: 16px;
+  }
+}
+.content {
+  padding: 15px;
+}
+.title {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+.message {
+  margin: 8px 0;
+}
+.metrics {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.input {
+  text-align: center;
+  height: 0px;
+  :global(.socket) {
+    margin: -20px 0 0;
+  }
+}

@@ -1,0 +1,13 @@
+.react-daterange-picker {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  .react-daterange-picker__wrapper {
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+    padding: 6px 0;
+  }
+}
+.react-daterange-picker__calendar {
+  z-index: 10 !important;
+  margin-top: 0.5rem;
+}

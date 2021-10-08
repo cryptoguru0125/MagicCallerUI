@@ -1,0 +1,14 @@
+.summary {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+  label {
+    font-weight: 300;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+  }
+  > div {
+    margin: 0 20px;
+  }
+}

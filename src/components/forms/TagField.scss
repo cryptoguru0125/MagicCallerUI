@@ -1,0 +1,145 @@
+.tags-container {
+  &.focus {
+    .react-tags {
+      border-bottom-color: #4285f4;
+      box-shadow: #4285f4 0px 1px 0px 0px;
+    }
+    > label {
+      color: #4285f4;
+    }
+  }
+  > label {
+    pointer-events: none;
+  }
+}
+.react-tags {
+  position: relative;
+  border-bottom: 1px solid #ced4da;
+  padding-top: 0.6em;
+  cursor: text;
+  .chip {
+    box-sizing: border-box;
+    margin-bottom: 0.4em;
+    margin-right: 0.4em;
+    vertical-align: middle;
+  }
+}
+
+.react-tags.is-focused {
+  border-color: #b1b1b1;
+}
+
+.react-tags__selected {
+  display: inline;
+}
+
+.react-tags__selected-tag {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0 6px 6px 0;
+  padding: 6px 8px;
+  border: 1px solid #d1d1d1;
+  border-radius: 2px;
+  background: #f1f1f1;
+
+  /* match the font styles */
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.react-tags__selected-tag:after {
+  content: '\2715';
+  color: #aaa;
+  margin-left: 8px;
+}
+
+.react-tags__selected-tag:hover,
+.react-tags__selected-tag:focus {
+  border-color: #b1b1b1;
+}
+
+.react-tags__search {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 0.4em;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 30em) {
+  .react-tags__search {
+    /* this will become the offsetParent for suggestions */
+    position: relative;
+  }
+}
+
+.react-tags__search input {
+  display: inline-block;
+  background: 0 0;
+  border: 0;
+  outline: 0;
+  padding: 0 !important;
+  width: 120px !important;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 13px;
+  font-weight: 500;
+  height: 32px;
+  line-height: 32px;
+}
+
+.react-tags__search input::-ms-clear {
+  display: none;
+}
+
+.react-tags__suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 30em) {
+  .react-tags__suggestions {
+    width: 240px;
+  }
+}
+
+.react-tags__suggestions ul {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  list-style-type: none;
+  overflow-y: auto;
+  max-height: 210px;
+  padding-left: 0;
+  background: #fff;
+  font-weight: 300;
+}
+
+.react-tags__suggestions li {
+  padding: 12px 15px;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.react-tags__suggestions li mark {
+  text-decoration: underline;
+  background: none;
+  font-weight: 600;
+}
+
+.react-tags__suggestions li:hover {
+  cursor: pointer;
+  background: #eee;
+}
+
+.react-tags__suggestions li.is-active {
+  background: #b7cfe0;
+}
+
+.react-tags__suggestions li.is-disabled {
+  opacity: 0.5;
+  cursor: auto;
+}

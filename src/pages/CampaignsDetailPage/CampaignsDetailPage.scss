@@ -1,0 +1,30 @@
+footer {
+  position: relative;
+  z-index: 2;
+}
+.campaign-detail-page {
+  padding-left: 90px;
+  .side-nav {
+    padding-top: 70px;
+    z-index: 1;
+    &:hover {
+      width: 12rem !important;
+    }
+    .waves-effect {
+      display: none;
+    }
+  }
+
+  [class^='fe-'] {
+    font-size: 12px;
+    display: inline-block;
+  }
+}
+.side-nav.wide {
+  width: 12rem;
+  .badge {
+    position: absolute;
+    right: 2px;
+    top: 5px;
+  }
+}

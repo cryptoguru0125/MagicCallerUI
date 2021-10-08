@@ -1,0 +1,59 @@
+.form-group {
+  margin-bottom: 0;
+}
+.button-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.md-form {
+  .prefix {
+    ~ .invalid-feedback {
+      margin-left: 2.5rem;
+    }
+  }
+  .spinner-border {
+    position: absolute;
+    right: 0.2em;
+    top: 1em;
+  }
+}
+.md-textarea.form-control {
+  resize: vertical !important;
+  overflow-y: auto !important;
+  height: 160px;
+}
+.mdb-main-label {
+  pointer-events: none;
+}
+.hide-label-active {
+  .mdb-main-label.active {
+    opacity: 0;
+  }
+}
+form.with-label {
+  .mdb-main-label.active,
+  label.active {
+    display: none;
+  }
+  .md-form {
+    margin-top: 1.4rem;
+  }
+  .md-textarea.form-control {
+    padding-top: 0.5rem;
+  }
+}
+.show-md-label {
+  label.active {
+    display: initial !important;
+  }
+}
+.form-group.row {
+  .col-form-label {
+    text-align: right;
+    color: #757575;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 1.5rem;
+  }
+}

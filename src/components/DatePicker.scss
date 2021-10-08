@@ -1,0 +1,34 @@
+.datepicker {
+  position: relative;
+  .datepicker-button {
+    cursor: pointer;
+    .far {
+      font-size: 1.5em;
+      vertical-align: middle;
+      margin-left: 0.4em;
+    }
+  }
+
+  .datepicker-popup {
+    position: absolute;
+    right: -2rem;
+    top: calc(100% + 10px);
+    z-index: 20;
+    box-shadow: 1px 1px 81px rgba(41, 60, 74, 0.18);
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    display: none;
+    &.opened {
+      display: block;
+    }
+    .rdrMonthName {
+      text-align: center;
+    }
+  }
+  .action-row {
+    border-top: 1px solid #bec3c9;
+    padding: 8px 12px;
+    text-align: right;
+  }
+}

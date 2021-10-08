@@ -1,0 +1,42 @@
+.container {
+  position: relative;
+}
+.btnCalendar {
+  font-size: 1.5em;
+  vertical-align: middle;
+  margin-left: 0.4em;
+}
+
+.popup {
+  position: absolute;
+  right: 0rem;
+  top: calc(100% + 10px);
+  z-index: 20;
+  box-shadow: 1px 1px 81px rgba(41, 60, 74, 0.18);
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+  &:global(.opened) {
+    display: block;
+  }
+  .rdrMonthName {
+    text-align: center;
+  }
+  select {
+    display: initial !important;
+  }
+}
+.timeCol {
+  padding-right: 1rem;
+  margin-top: 20px;
+  text-align: left;
+  select {
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+  }
+  select + select {
+    margin-left: 10px;
+  }
+}

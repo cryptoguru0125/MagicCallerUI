@@ -1,0 +1,61 @@
+.container {
+  height: 100%;
+  width: 300px;
+  box-shadow: 3px 0px 3px -2px rgba(60, 64, 67, 0.3);
+  padding: 20px 0;
+}
+
+.contactItem {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #ced4da;
+  &:hover,
+  &.selected {
+    background-color: rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+  }
+  &:hover .close {
+    display: inline-block;
+  }
+  :global(.flex-1) {
+    max-width: calc(100% - 30px);
+  }
+}
+.status {
+  width: 30px;
+}
+.time {
+  float: right;
+  font-size: 12px;
+}
+.name {
+  font-weight: bold;
+  color: rgb(83, 83, 83);
+}
+a.name:hover {
+  color: #4382ff;
+}
+.message {
+  font-size: 14px;
+  color: #ccc;
+  max-height: 3em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.close {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  display: none;
+}
+.agent {
+  margin-top: 3px;
+  display: flex;
+  font-size: 14px;
+  label {
+    margin: 0 5px 0 0;
+  }
+}
+.scrollView {
+  padding-right: 8px;
+}

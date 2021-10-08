@@ -1,0 +1,22 @@
+.prompt-table {
+  .btn-audio {
+    font-size: 1.5rem;
+    opacity: 0.4;
+    &.active {
+      color: #4382ff;
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}
+.no-button,
+.no-button:hover {
+  background: none !important;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  color: #212529;
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-transform: none;
+}

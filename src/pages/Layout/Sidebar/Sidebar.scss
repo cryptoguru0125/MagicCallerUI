@@ -1,0 +1,29 @@
+.side-nav.wide {
+  width: 250px !important;
+}
+.brand-bar {
+  color: #424242;
+  display: flex;
+  align-items: center;
+  padding-left: 43px;
+  .navbar-brand a {
+    padding-left: 0;
+  }
+}
+.side-nav.wide .collapsible a {
+  font-size: 12px;
+  color: #333;
+  font-weight: 400 !important;
+  padding-left: 45px !important;
+  height: 46px !important;
+  line-height: 46px !important;
+  .menu-icon {
+    color: #428cff;
+    font-size: 18px;
+    margin-right: 20px;
+  }
+  .sv-normal {
+    display: inline-flex;
+    align-items: center;
+  }
+}

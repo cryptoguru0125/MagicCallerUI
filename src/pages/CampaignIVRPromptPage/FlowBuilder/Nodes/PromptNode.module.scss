@@ -1,0 +1,110 @@
+.node {
+  background: white;
+  border-radius: 1px;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.4);
+  min-width: 350px;
+  position: relative;
+  font-size: 14px;
+
+  :global(.mini-audio) {
+    font-size: 16px;
+  }
+}
+.toolbar {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  span {
+    display: inline-block;
+    margin: 0 5px;
+  }
+}
+.content {
+  padding: 15px;
+}
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #444343;
+}
+.message {
+  margin-top: 8px;
+  max-width: 320px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.metrics {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  small {
+    display: block;
+  }
+}
+.input {
+  text-align: center;
+  height: 0px;
+  :global(.socket) {
+    margin: -20px 0 0;
+  }
+}
+.outputContainer {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+.addSection {
+  display: inline-block;
+  font-size: 18px;
+  padding: 0px 10px;
+  text-align: center;
+}
+.numberSection {
+  border: 1px solid #ccc;
+  border-bottom: 0px;
+  display: inline-block;
+  margin-left: -1px;
+  text-align: center;
+  width: 85px;
+  height: 60px;
+  strong {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  :global(.socket) {
+    background: #ff5722;
+    width: 14px;
+    height: 14px;
+    margin: 5px 0 0 0;
+    &:hover {
+      box-shadow: 0px 0px 4px 2px rgba(255, 87, 34, 1);
+    }
+  }
+  &:hover .removeNumber {
+    display: initial;
+  }
+}
+.removeNumber {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  display: none;
+}
+
+:global(.socket) {
+  border: 0px none;
+  background: #a6c;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  &:hover {
+    border: 1px solid white;
+    box-shadow: 0px 0px 12px 4px rgba(170, 102, 204, 0.41);
+  }
+}
+:global(.connection .main-path) {
+  stroke: #33b5e5;
+}

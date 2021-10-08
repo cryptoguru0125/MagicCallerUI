@@ -1,0 +1,21 @@
+.copy-text {
+  display: flex;
+  background-color: #f6f6f6;
+  cursor: no-drop;
+  .form-control {
+    border: 0;
+    background: transparent;
+    flex: 1;
+  }
+  .copy-button {
+    cursor: pointer;
+  }
+  .btn {
+    padding: 6px 12px;
+    margin: 0;
+    background: transparent !important;
+    color: #535353;
+    font-size: inherit !important;
+    box-shadow: none !important;
+  }
+}

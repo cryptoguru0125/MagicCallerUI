@@ -1,0 +1,32 @@
+.text-default {
+  color: #535353 !important;
+}
+.text-success {
+  color: #3d8632 !important;
+}
+.text-danger {
+  color: #9a2f2f !important;
+}
+.text-link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+h1 {
+  color: #2f2f2f;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.secondary-heading {
+  font-size: 1.5rem;
+  font-weight: 700 !important;
+  color: #444343;
+  overflow: hidden;
+  margin-top: 1.5rem;
+}
+@media (max-width: 991px) {
+  h1 {
+    font-size: 35px;
+  }
+}

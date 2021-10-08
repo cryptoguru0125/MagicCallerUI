@@ -1,0 +1,22 @@
+table.table.align-middle {
+  td {
+    vertical-align: middle;
+  }
+}
+.fade-tr-enter {
+  opacity: 0;
+  background: #fae7e8;
+}
+.fade-tr-enter-active {
+  opacity: 1;
+  background: transparent;
+  transition: all 800ms ease-in;
+}
+.fade-tr-exit {
+  opacity: 1;
+}
+.fade-tr-exit-active {
+  opacity: 0;
+  background: #fae7e8;
+  transition: all 800ms ease-in;
+}

@@ -1,0 +1,33 @@
+{
+  "id": "demo@0.1.0",
+  "nodes": {
+    "1": {
+      "id": 1,
+      "data": {
+        "data": {},
+        "buttons": [2]
+      },
+      "inputs": { "in": { "connections": [] } },
+      "outputs": {
+        "0": { "connections": [{ "node": 2, "input": "in", "data": {} }] }
+      },
+      "position": [-285.5, -105.375],
+      "name": "Prompt"
+    },
+    "2": {
+      "id": 2,
+      "data": {
+        "data": {},
+        "buttons": []
+      },
+      "inputs": {
+        "in": {
+          "connections": []
+        }
+      },
+      "outputs": {},
+      "position": [-16.5, -99.375],
+      "name": "Prompt"
+    }
+  }
+}

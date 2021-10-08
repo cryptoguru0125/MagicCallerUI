@@ -1,0 +1,10 @@
+.breadcrumb {
+  background: transparent;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  content: '>';
+}
+.breadcrumb-item:not(.active) {
+  color: #4382ff;
+  cursor: pointer;
+}

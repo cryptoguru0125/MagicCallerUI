@@ -1,0 +1,29 @@
+.date-field {
+  margin: 0;
+  input {
+    font-size: 22px;
+    font-weight: 500;
+    height: 70px;
+    padding: 22px 20px;
+    color: #535353;
+    border-radius: 5px !important;
+    border: solid 1px #b2b2b2 !important;
+    line-height: 1;
+    box-sizing: border-box !important;
+  }
+  > div > div {
+    &:before {
+      display: none !important;
+    }
+    &:after {
+      display: none !important;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .date-field input {
+    font-size: 16px;
+    height: 50px;
+    padding: 10px 20px;
+  }
+}
